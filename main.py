@@ -3,6 +3,7 @@ import concurrent.futures
 import time
 import os
 
+os.system("mkdir out")
 for x in range(0,20000):
    f = open("out/test"+str(x), 'w')
    f.write(str(x) + "\n" + str(20-x))
